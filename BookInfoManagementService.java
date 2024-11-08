@@ -1,7 +1,14 @@
 public class BookInfoManagementService {
+
+    private Book book;
+
     public BookInfoManagementService(Book book) {
-        System.out.println("Titulo libro: : " + book.getTitle());
-        System.out.println("Autor del Libro: : " + book.getAuthor());
-        System.out.println("Numero de paginas:  " + book.getNumberOfPages());
+        this.book = book;
+    }
+
+    public void printBookInfo() {
+        System.out.println("Titulo: " + book.getTitle());
+        System.out.println("Autor: " + book.getAuthor());
+        System.out.println("Cantidad de paginas: " + book.getNumberOfPages());
     }
 }

@@ -1,5 +1,11 @@
 public class BookReportService {
+    private Book book;
+
     public BookReportService(Book book) {
-        System.out.println("Generando reporte para el libro: " + book.getTitle());
+        this.book = book;
+    }
+
+    public void generateReport() {
+        System.out.println("Generando informe del libro");
     }
 }

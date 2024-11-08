@@ -1,7 +1,15 @@
 package ProductoApp;
 
 public class LabelingService {
+
+    private Product product;
+
+
     public LabelingService(Product product) {
-        System.out.println("Generando etiquetas para el producto "+ product.getName());
+        this.product = product;
+    }
+
+    public void labelProduct() {
+        System.out.println("Etiquetando producto"+ product.getName());
     }
 }
